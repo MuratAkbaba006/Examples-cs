@@ -1,0 +1,51 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Collections;
+
+namespace ConsoleApplication12
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Console.WriteLine("dikdörtgenin kýsa kenarini giriniz-->");
+            double a = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("dikdörtgenin uzun kenarini giriniz-->");
+            double b = Convert.ToDouble(Console.ReadLine());
+
+            double c = alancevrehesapla.alan(a, b);
+            double d = alancevrehesapla.cevre(a, b);
+
+            Console.WriteLine("DÝKDÖRTGENÝN ALANI:"+c);
+            Console.WriteLine("DÝKDÖRTGENÝN CEVRESi:"+d);
+
+            Console.ReadKey();
+
+
+
+
+        }
+
+
+        class alancevrehesapla
+        {
+
+            public static double alan(double x,double y)
+            {
+                return (x * y);
+
+            }
+            public static double cevre(double x,double y)
+            {
+                return (2 * x + 2 * y);
+
+            }
+
+        }
+
+    }
+}

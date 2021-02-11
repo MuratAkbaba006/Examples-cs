@@ -1,0 +1,42 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication12
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[,] dizi = new int[2, 2];
+            for (int i = 0; i < 2; i++)
+            {
+                for (int j = 0; j < 2; j++)
+
+                {
+                    Console.WriteLine("dizinin {0}. satir {1}. sutun elemanýný giriniz", i+1, j+1);
+                    dizi[i, j] = Convert.ToInt32(Console.ReadLine());
+
+
+                }
+
+            }
+
+
+
+            for (int i=0;i<2;i++)
+            {
+                for(int j=0;j<2;j++)
+                
+                    Console.Write("{0}\t",dizi[i,j]);
+                          
+                {
+                    Console.WriteLine();
+                }
+            }
+            Console.ReadKey();
+        }
+    }
+}

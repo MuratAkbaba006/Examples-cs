@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication10
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] sayilar = { 7, 8, 9, 15, 16, 25, 24, 78, 77 };
+            int toplam = 0,k=0;
+            foreach (int i in sayilar)
+            {
+                if(i%2==0)
+                {
+                    k++;
+                    toplam = toplam + i;
+                    Console.WriteLine(i);
+
+                }
+
+
+            }
+            Console.WriteLine("{0} adet cift sayi bulundu", k);
+            Console.WriteLine("toplam " + toplam);
+            Console.ReadKey(); 
+        }
+    }
+}

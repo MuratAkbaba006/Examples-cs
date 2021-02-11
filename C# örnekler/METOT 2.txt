@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Collections;
+
+namespace ConsoleApplication12
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Console.WriteLine("birinci sayiyi giriniz-->");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("ikinci sayiyi giriniz-->");
+            int b = Convert.ToInt32(Console.ReadLine());
+    
+            Console.WriteLine((toplama(a, b)));
+            Console.ReadKey();
+        }
+        public static int toplama(int x,int y)
+        {
+
+            int c = x + y;
+            return c;
+
+        }
+    }
+}

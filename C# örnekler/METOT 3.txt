@@ -1,0 +1,40 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Collections;
+
+namespace ConsoleApplication12
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Console.WriteLine("dikdörtgenin kýsa kenarini giriniz-->");
+            int k1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("dikdortgenin uzun kenarini giriniz-->");
+            int k2 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("dikdörtgenin alani:" + alan(k1, k2));
+            Console.WriteLine("dikdörtgenin cevresi:" + cevre(k1, k2));
+
+            Console.ReadKey();
+
+
+        }
+
+        public static int alan(int a,int b)
+        {
+
+            return (a * b);
+
+        }
+        public static int cevre(int a,int b)
+        {
+
+            return (2 * a + 2 * b);
+        }
+    }
+}

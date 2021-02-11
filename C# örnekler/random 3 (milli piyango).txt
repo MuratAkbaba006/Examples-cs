@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication11
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Console.WriteLine("milli piyango cekilisi");
+            Random rastgele = new Random();
+            int a, b, c, d, e, f, g;
+            a = rastgele.Next(0, 10);
+            b= rastgele.Next(0, 10);
+            c = rastgele.Next(0, 10);
+            d = rastgele.Next(0, 10);
+            e = rastgele.Next(0, 10);
+            f = rastgele.Next(0, 10);
+            g = rastgele.Next(0, 10);
+            Console.WriteLine("kazanan numaralar");
+            Console.WriteLine( "{0} \t {1} \t{2}\t{3}\t{4}\t{5}\t{6}",a,b,c,d,e,f,g);
+
+
+
+
+            Console.ReadKey();
+        }
+    }
+}

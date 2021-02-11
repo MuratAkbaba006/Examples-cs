@@ -1,0 +1,42 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication9
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+           
+            int[] dizi = new int[5];
+
+            for(int i=0;i<=4;i++)
+            {
+                Console.WriteLine("{0}.sayiyi giriniz-->", i + 1);
+                dizi[i] = Convert.ToInt32(Console.ReadLine());
+            }
+              for(int i=0;i<=4;i++)
+            {
+                for(int j=0;j<=4;j++)
+                {
+                    if (dizi[i] >dizi[j])
+                    {
+                        int a;
+                        a = dizi[i];
+                        dizi[i] = dizi[j];
+                        dizi[j] = a;
+                        
+                    }
+
+
+                }
+            }
+            Console.WriteLine("girmis oldugunuz sayýlarýn en büyüðü {0} dýr", dizi[0]);
+            Console.ReadKey();
+
+        }
+    }
+}

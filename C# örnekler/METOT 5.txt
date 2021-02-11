@@ -1,0 +1,86 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Collections;
+
+namespace ConsoleApplication12
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+          x:  Console.WriteLine("toplama icin 1:");
+            Console.WriteLine("cýkarma icin 2:");
+            Console.WriteLine("carpma icin 3:");
+            Console.WriteLine("bolme icin 4:");
+
+            Console.WriteLine("yapmak istediðiniz islemi seciniz");
+            int secim = Convert.ToInt32(Console.ReadLine());
+
+
+            dortislem nesne1 = new dortislem();
+            Console.WriteLine("1.sayiyi giriniz-->");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("2.sayiyi giriniz-->");
+            int b = Convert.ToInt32(Console.ReadLine());
+
+
+
+            do
+            {
+
+                switch (secim)
+                {
+                    case 1: Console.WriteLine(nesne1.topla(a, b)); Console.ReadKey(); break;
+
+                    case 2: Console.WriteLine(nesne1.cýkarma(a, b)); Console.ReadKey();goto x; break;
+                    case 3: Console.WriteLine(nesne1.carpma(a, b)); Console.ReadKey(); goto x; break;
+                    case 4: Console.WriteLine(nesne1.bolme(a, b)); Console.ReadKey(); goto x; break;
+                    default: Console.WriteLine("yanlis secim yaptiniz"); Console.ReadKey();goto x; break;
+
+                }
+            }
+            while (secim == 0);
+
+       
+
+
+    }
+         
+   
+
+        class dortislem
+        {
+
+            public double topla(int x,int y)
+            {
+
+                return (x + y);
+
+            }
+            public double cýkarma(int x,int y)
+            {
+
+                return (x - y);
+
+            }
+
+            public double bolme(int x,int y)
+            {
+
+                return (x / y);
+            }
+            public double carpma(int x,int y)
+            {
+
+                return (x * y);
+            }
+
+        }
+
+
+    }
+}

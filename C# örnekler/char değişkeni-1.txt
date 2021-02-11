@@ -1,0 +1,44 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication11
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+
+            char a;
+           x: Console.WriteLine("erkek icin e kadýn icin k giriniz-->");
+            a = Convert.ToChar(Console.ReadLine());
+            if ((a == 'e') || (a == 'E'))
+            {
+                Console.WriteLine("erkek secimi yaptýnýz");
+                goto x;
+            }
+
+
+            else if ((a == 'k') || (a == 'K'))
+            {
+
+                Console.WriteLine("kadýn secimi yaptýnýz");
+                goto x;
+
+
+            }
+            else
+            {
+                Console.WriteLine("lutfen e ve k dan birini giriniz-->");
+                goto x;
+            }
+
+
+
+            Console.ReadKey();
+        }
+    }
+}

@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication11
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int harf;
+            Console.WriteLine("TURKCE ÝCÝN 1E BASINIZ");
+            Console.WriteLine("MATEMATÝK ÝCÝN 2 YE BASÝNÝZ");
+            Console.WriteLine("FÝZÝK ÝCÝN 3 E BASÝNÝZ");
+            harf = Convert.ToInt32(Console.ReadLine());
+
+            switch(harf)
+                {
+                case 1:Console.WriteLine("turkce sectiniz");break;
+                case 2:Console.WriteLine("matematik sectiniz");break;
+                case 3:Console.WriteLine("fizik sectiniz");break;
+                default:Console.WriteLine("1 ile 3 arasinda secim yapiniz");break;
+            } 
+
+
+            
+            Console.ReadKey();
+        }
+    }
+}

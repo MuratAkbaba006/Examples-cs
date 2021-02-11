@@ -1,0 +1,58 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.IO;
+
+namespace ConsoleApplication18
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            /*1.YOL
+             
+             string hedefyol= @"C:\Users\sony\Desktop\deneme.txt";
+            string[] dizi = { "ogrenci no:123", "adý:murat", "soyadý:akbaba" };
+            File.WriteAllLines(hedefyol,dizi); 
+            
+
+            2.YOL
+            string hedefyol = @"C:\Users\sony\Desktop\deneme.txt";
+            string ozgecmis = "1997 yýlýnda ankara ilinin elmadað ilçesinde dünyaya geldim";
+            File.WriteAllText(hedefyol, ozgecmis);
+            
+    3.YOL
+            string hedefyol = @"C:\Users\sony\Desktop\deneme.txt";
+            string[] personel = { "personel:meymet aydýn", "personel:mustafa kaya", "müdür:mustafa etcil", "müdür:gazi akbaba" };
+            using(StreamWriter dosya = new StreamWriter(hedefyol)) 
+            { foreach (string i in personel)
+                {
+
+                    if (i.Contains("müdür"))
+                    {
+
+                        dosya.WriteLine(i);
+                    }
+
+                }
+            }*/
+
+            string hedefyol = @"C:\Users\sony\Desktop\deneme.txt";
+            using (StreamWriter dosya = new StreamWriter(hedefyol, true))
+
+            {
+                dosya.WriteLine("eklenen satirlar");
+
+            }
+
+
+
+
+
+                Console.ReadKey();
+
+        }
+    }
+}

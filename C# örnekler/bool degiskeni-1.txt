@@ -1,0 +1,24 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication11
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int sayi;
+            Console.WriteLine("sayi giriniz-->");
+            sayi = Convert.ToInt32(Console.ReadLine());
+            bool durum1=sayi>0;
+            bool durum2=sayi>10;
+            Console.WriteLine("sayý pozitif mi:\n{0} ", durum1);
+            Console.WriteLine("sayi 10 dan buyukmu:\n{0}", durum2);
+            
+            Console.ReadKey();
+        }
+    }
+}
